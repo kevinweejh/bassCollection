@@ -41,16 +41,17 @@
                                 <option value="Music Man">Music Man</option>
                                 <option value="Sterling">Sterling</option>
                                 <option value="Yamaha">Yamaha</option>
-                                <option value="Schecter">Schecter</option>
+                                <!-- <option value="Schecter">Schecter</option>
                                 <option value="Sadowsky">Sadowsky</option>
                                 <option value="Rickenbacker">Rickenbacker</option>
                                 <option value="Modulus">Modulus</option>
                                 <option value="Höfner">Höfner</option>
                                 <option value="Bacchus">Bacchus</option>
-                                <option value="AtelierZ">AtelierZ</option>
+                                <option value="AtelierZ">AtelierZ</option> -->
                                 <option value="Others">Others</option>
                             </datalist>
-                            
+                            <label class="uppercase tracking-widest font-semibold text-xs text-gray-700" for="other-brand">Other brand</label>
+                            <input class="max-w-xs border rounded border-gray-400" type="text" name="other-brand" id="other-brand" disabled><br>
                         </div>
                         <div class="flex flex-col">
                             <label class="uppercase tracking-widest font-semibold text-xs text-gray-700" for="last-name">Last name</label>
@@ -61,6 +62,8 @@
                             <input class="max-w-xs border rounded border-gray-400" type="password" name="confirm-password" id="confirm-password" required><br>
                             <label class="uppercase tracking-widest font-semibold text-xs text-gray-700" for="model">Model</label>
                             <input class="max-w-xs border rounded border-gray-400" type="text" name="model" id="model"><br>
+                            <label class="uppercase tracking-widest font-semibold text-xs text-gray-700" for="other-model">Other model</label>
+                            <input class="max-w-xs border rounded border-gray-400" type="text" name="other-model" id="other-model" disabled><br>
                         </div>
                     </div>
                     <div class="flex flex-col">
@@ -75,6 +78,52 @@
                 <br>
                 <div class="text-gray-800">Already set up your warranty? Rock on! 🤘🏻</div>
             </div>
+            <datalist id="fender-model-list">
+                <option value="fender-jazz">Jazz Bass</option>
+                <option value="fender-precision">Precision Bass</option>
+                <option value="fender-jaguar">Jaguar Bass</option>
+                <option value="fender-mustang">Mustang Bass</option>
+                <option value="fender-others">Not listed here</option>
+            </datalist>
+            <datalist id="squier-model-list">
+                <option value="squier-jazz">Jazz Bass</option>
+                <option value="squier-precision">Precision Bass</option>
+                <option value="squier-jaquar">Jaguar Bass</option>
+                <option value="squier-mustang">Mustang Bass</option>
+                <option value="squier-others">Not listed here</option>
+            </datalist>
+            <datalist id="ibanez-model-list">
+                <option value="ibanez-sr">SR</option>
+                <option value="ibanez-btb">BTB</option>
+                <option value="ibanez-ehb">EHB</option>
+                <option value="ibanez-rgb">RGB</option>
+                <option value="ibanez-talman">Talman Bass</option>
+                <option value="ibanez-mikro">miKro</option>
+                <option value="ibanez-others">Not listed here</option>
+            </datalist>
+            <datalist id="musicman-model-list">
+                <option value="musicman-stingray4">StingRay 4</option>
+                <option value="musicman-stingray5">StingRay 5</option>
+                <option value="musicman-darkray">DarkRay</option>
+                <option value="musicman-joedart">Joe Dart Signature</option>
+                <option value="musicman-johnmyung">John Myung Signature</option>
+                <option value="musicman-others">Not listed here</option>
+            </datalist>
+            <datalist id="sterling-model-list">
+                <option value="sterling-ray34">Ray34</option>
+                <option value="sterling-ray35">Ray35</option>
+                <option value="sterling-ray4">Ray4</option>
+                <option value="sterling-ray5">Ray5</option>
+                <option value="sterling-darkray">DarkRay</option>
+                <option value="sterling-petewentz">Pete Wentz Signature</option>
+                <option value="sterling-others">Not listed here</option>
+            </datalist>
+            <datalist id="yamaha-model-list">
+                <option value="yamaha-bb">BB</option>
+                <option value="yamaha-trbx">TRBX</option>
+                <option value="yamaha-trb">TRB</option>
+                <option value="yamaha-others">Not listed here</option>
+            </datalist>
         </form>
     </div>
 </body>
