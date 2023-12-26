@@ -6,14 +6,76 @@
     <link href="/dist/output.css" rel="stylesheet">
     <title>Warranty Registration Form</title>
 </head>
-<body class="flex bg-black max-h-screen">
+<body class="flex max-h-screen min-h-screen">
     <div class="relative w-1/3">
         <div class="bg-black bg-opacity-50 w-full absolute bottom-3/4 flex justify-center">
             <img src="/img/warrantyZoneLogo.webp" alt="Warranty Zone Logo">
         </div>
-        <img src="/img/pBass.jpg" alt="Fender Precision Bass in a nook">
+        <div class="bg-[url('/img/pBass.jpg')] bg-repeat bg-contain max-h-screen min-h-full bg-center"></div>
         <div class="absolute text-gray-800 text-center bottom-0 w-full animate-bg-change">Photo by <a class="underline" target="_blank" href="https://unsplash.com/@viniciusamano">Vinicius "amnx" Amano</a> on <a class="underline" target="_blank" href="https://unsplash.com/">Unsplash</a></div>
     </div>  
-    <div class="w-2/3 bg-white">a</div>
+    <div class="w-2/3 bg-gray-100 flex flex-col">
+        <div class="px-16 py-8">
+            <h2 class="text-2xl font-medium">You! Yes, you with the hot new axe! You want to drop everything and jump straight into jamming, I know the feel.</h2><br>
+            <h3 class="text-2xl font-medium">But hear me out, you <em>need</em> to set up your warranty first!</h3>
+        </div>
+        <form action="https://httpbin.org/post" method="post">
+            <div class="bg-white shadow-md px-16 py-8">
+                <h2 class="text-2xl font-medium">Warranty me up, baby!</h2>
+                <br>
+                <div class="flex flex-col">
+                    <div class="columns-2">
+                        <div class="flex flex-col">
+                            <label class="uppercase tracking-widest font-semibold text-xs text-gray-700" for="first-name">*First name</label>
+                            <input class="max-w-xs border rounded border-gray-400" type="text" name="first-name" id="first-name" required><br>
+                            <label class="uppercase tracking-widest font-semibold text-xs text-gray-700" for="email">*Email</label>
+                            <input class="max-w-xs border rounded border-gray-400" type="email" name="email" id="email"><br>
+                            <label class="uppercase tracking-widest font-semibold text-xs text-gray-700" for="password">*Password</label>
+                            <input class="max-w-xs border rounded border-gray-400" type="password" name="password" id="password" required><br>
+                            <label class="uppercase tracking-widest font-semibold text-xs text-gray-700" for="brand">*Brand</label>
+                            <input class="max-w-xs border rounded border-gray-400" type="text" name="brand" id="brand" list="brand-list" pattern="[Ff]ender|[Ss]quier|[Ii]banez|[Mm]usicman|[Ss]terling|[Yy]amaha|[Ss]checter|[Ss]adowsky|[Rr]ickenbacker|[Mm]odulus|[Hh]öfner|[Bb]acchus|[Aa]terlierZ|[Oo]thers" required><br>
+                            <datalist id="brand-list">
+                                <option value="Fender">Fender</option>
+                                <option value="Squier">Squier</option>
+                                <option value="Ibanez">Ibanez</option>
+                                <option value="Music Man">Music Man</option>
+                                <option value="Sterling">Sterling</option>
+                                <option value="Yamaha">Yamaha</option>
+                                <option value="Schecter">Schecter</option>
+                                <option value="Sadowsky">Sadowsky</option>
+                                <option value="Rickenbacker">Rickenbacker</option>
+                                <option value="Modulus">Modulus</option>
+                                <option value="Höfner">Höfner</option>
+                                <option value="Bacchus">Bacchus</option>
+                                <option value="AtelierZ">AtelierZ</option>
+                                <option value="Others">Others</option>
+                            </datalist>
+                            
+                        </div>
+                        <div class="flex flex-col">
+                            <label class="uppercase tracking-widest font-semibold text-xs text-gray-700" for="last-name">Last name</label>
+                            <input class="max-w-xs border rounded border-gray-400" type="text" name="last-name" id="last-name"><br>
+                            <label class="uppercase tracking-widest font-semibold text-xs text-gray-700" for="phone-number">Phone number</label>
+                            <input class="max-w-xs border rounded border-gray-400" type="tel" name="phone-number" id="phone-number"><br>
+                            <label class="uppercase tracking-widest font-semibold text-xs text-gray-700" for="password">*Confirm password</label>
+                            <input class="max-w-xs border rounded border-gray-400" type="password" name="confirm-password" id="confirm-password" required><br>
+                            <label class="uppercase tracking-widest font-semibold text-xs text-gray-700" for="model">Model</label>
+                            <input class="max-w-xs border rounded border-gray-400" type="text" name="model" id="model"><br>
+                        </div>
+                    </div>
+                    <div class="flex flex-col">
+                        <label class="uppercase tracking-widest font-semibold text-xs text-gray-700" for="serial-number">*Serial number</label>
+                        <input class="max-w-md border rounded border-gray-400" type="text" name="serial-number" id="serial-number" required><br>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="px-16 py-8 flex flex-col">
+                <input class="bg-yellow-900 shadow shadow-yellow-200 rounded-lg w-fit py-3 px-16 text-gray-100 text-lg font-medium" type="submit" value="Get Protected">
+                <br>
+                <div class="text-gray-800">Already set up your warranty? Rock on! 🤘🏻</div>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
