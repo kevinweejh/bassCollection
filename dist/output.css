@@ -1905,8 +1905,8 @@ video {
   --tw-bg-opacity: 0.5;
 }
 
-.bg-\[url\(\'\/img\/pBass\.jpg\'\)\] {
-  background-image: url('/img/pBass.jpg');
+.bg-\[url\(\'img\/pBass\.jpg\'\)\] {
+  background-image: url('img/pBass.jpg');
 }
 
 .decoration-slice {
