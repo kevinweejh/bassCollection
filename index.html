@@ -20,57 +20,56 @@
             <h3 class="text-2xl font-medium">But hear me out, you <em>need</em> to set up your warranty first!</h3>
         </div>
         <form action="https://httpbin.org/post" method="post">
-            <div class="bg-white shadow-md px-16 py-8">
+            <div class="bg-white shadow-md px-16 py-8 flex flex-col">
                 <h2 class="text-2xl font-medium">Warranty me up, baby!</h2>
                 <br>
-                <div class="flex flex-col">
-                    <div class="columns-2">
-                        <div class="flex flex-col">
-                            <label class="uppercase tracking-widest font-semibold text-xs text-gray-700" for="first-name">*First name</label>
-                            <input class="max-w-xs border rounded border-gray-400" type="text" name="first-name" id="first-name" required><br>
-                            <label class="uppercase tracking-widest font-semibold text-xs text-gray-700" for="email">*Email</label>
-                            <input class="max-w-xs border rounded border-gray-400" type="email" name="email" id="email"><br>
-                            <label class="uppercase tracking-widest font-semibold text-xs text-gray-700" for="password">*Password</label>
-                            <input class="max-w-xs border rounded border-gray-400" type="password" name="password" id="password" required><br>
-                            <label class="uppercase tracking-widest font-semibold text-xs text-gray-700" for="brand">*Brand</label>
-                            <input class="max-w-xs border rounded border-gray-400" type="text" name="brand" id="brand" list="brand-list" pattern="[Ff]ender|[Ss]quier|[Ii]banez|[Mm]usicman|[Ss]terling|[Yy]amaha|[Ss]checter|[Ss]adowsky|[Rr]ickenbacker|[Mm]odulus|[Hh]öfner|[Bb]acchus|[Aa]terlierZ|[Oo]thers" required><br>
-                            <datalist id="brand-list">
-                                <option value="Fender">Fender</option>
-                                <option value="Squier">Squier</option>
-                                <option value="Ibanez">Ibanez</option>
-                                <option value="Music Man">Music Man</option>
-                                <option value="Sterling">Sterling</option>
-                                <option value="Yamaha">Yamaha</option>
-                                <!-- <option value="Schecter">Schecter</option>
-                                <option value="Sadowsky">Sadowsky</option>
-                                <option value="Rickenbacker">Rickenbacker</option>
-                                <option value="Modulus">Modulus</option>
-                                <option value="Höfner">Höfner</option>
-                                <option value="Bacchus">Bacchus</option>
-                                <option value="AtelierZ">AtelierZ</option> -->
-                                <option value="Others">Others</option>
-                            </datalist>
-                            <label class="uppercase tracking-widest font-semibold text-xs text-gray-700" for="other-brand">Other brand</label>
-                            <input class="max-w-xs border rounded border-gray-400" type="text" name="other-brand" id="other-brand" disabled><br>
-                        </div>
-                        <div class="flex flex-col">
-                            <label class="uppercase tracking-widest font-semibold text-xs text-gray-700" for="last-name">Last name</label>
-                            <input class="max-w-xs border rounded border-gray-400" type="text" name="last-name" id="last-name"><br>
-                            <label class="uppercase tracking-widest font-semibold text-xs text-gray-700" for="phone-number">Phone number</label>
-                            <input class="max-w-xs border rounded border-gray-400" type="tel" name="phone-number" id="phone-number"><br>
-                            <label class="uppercase tracking-widest font-semibold text-xs text-gray-700" for="password">*Confirm password</label>
-                            <input class="max-w-xs border rounded border-gray-400" type="password" name="confirm-password" id="confirm-password" required><br>
-                            <label class="uppercase tracking-widest font-semibold text-xs text-gray-700" for="model">Model</label>
-                            <input class="max-w-xs border rounded border-gray-400" type="text" name="model" id="model"><br>
-                            <label class="uppercase tracking-widest font-semibold text-xs text-gray-700" for="other-model">Other model</label>
-                            <input class="max-w-xs border rounded border-gray-400" type="text" name="other-model" id="other-model" disabled><br>
-                        </div>
-                    </div>
+                <div class="flex">
                     <div class="flex flex-col">
-                        <label class="uppercase tracking-widest font-semibold text-xs text-gray-700" for="serial-number">*Serial number</label>
-                        <input class="max-w-md border rounded border-gray-400" type="text" name="serial-number" id="serial-number" required><br>
-                        
+                        <label class="uppercase tracking-widest font-semibold text-xs text-gray-700" for="first-name">*First name</label>
+                        <input class="max-w-xs border rounded border-gray-400" type="text" name="first-name" id="first-name" required><br>
+                        <label class="uppercase tracking-widest font-semibold text-xs text-gray-700" for="email">*Email</label>
+                        <input class="max-w-xs border rounded border-gray-400" type="email" name="email" id="email"><br>
+                        <label class="uppercase tracking-widest font-semibold text-xs text-gray-700" for="password">*Password</label>
+                        <input class="max-w-xs border rounded border-gray-400" type="password" name="password" id="password" required><br>
+                        <label class="uppercase tracking-widest font-semibold text-xs text-gray-700" for="brand">*Brand</label>
+                        <input class="max-w-xs border rounded border-gray-400" type="text" name="brand" id="brand" list="brand-list" pattern="[Ff]ender|[Ss]quier|[Ii]banez|[Mm]usicman|[Ss]terling|[Yy]amaha|[Ss]checter|[Ss]adowsky|[Rr]ickenbacker|[Mm]odulus|[Hh]öfner|[Bb]acchus|[Aa]terlierZ|[Oo]thers" required><br>
+                        <datalist id="brand-list">
+                            <option value="Fender">Fender</option>
+                            <option value="Squier">Squier</option>
+                            <option value="Ibanez">Ibanez</option>
+                            <option value="Music Man">Music Man</option>
+                            <option value="Sterling">Sterling</option>
+                            <option value="Yamaha">Yamaha</option>
+                            <!-- <option value="Schecter">Schecter</option>
+                            <option value="Sadowsky">Sadowsky</option>
+                            <option value="Rickenbacker">Rickenbacker</option>
+                            <option value="Modulus">Modulus</option>
+                            <option value="Höfner">Höfner</option>
+                            <option value="Bacchus">Bacchus</option>
+                            <option value="AtelierZ">AtelierZ</option> -->
+                            <option value="Other">Other</option>
+                        </datalist>
+                        <label class="uppercase tracking-widest font-semibold text-xs text-gray-700" for="other-brand" id="other-brand-label" hidden>Other brand</label>
+                        <input class="max-w-xs border rounded border-gray-400" type="text" name="other-brand" id="other-brand" hidden disabled><br>
                     </div>
+                    <div class="min-w-20"></div> <!-- Spacer between columns -->
+                    <div class="flex flex-col">
+                        <label class="uppercase tracking-widest font-semibold text-xs text-gray-700" for="last-name">Last name</label>
+                        <input class="max-w-xs border rounded border-gray-400" type="text" name="last-name" id="last-name"><br>
+                        <label class="uppercase tracking-widest font-semibold text-xs text-gray-700" for="phone-number">Phone number</label>
+                        <input class="max-w-xs border rounded border-gray-400" type="tel" name="phone-number" id="phone-number"><br>
+                        <label class="uppercase tracking-widest font-semibold text-xs text-gray-700" for="password">*Confirm password</label>
+                        <input class="max-w-xs border rounded border-gray-400" type="password" name="confirm-password" id="confirm-password" required><br>
+                        <label class="uppercase tracking-widest font-semibold text-xs text-gray-700" for="model">Model</label>
+                        <input class="max-w-xs border rounded border-gray-400" type="text" name="model" id="model" list=""><br>
+                        <label class="uppercase tracking-widest font-semibold text-xs text-gray-700" for="other-model" id="other-model-label" hidden>Other model</label>
+                        <input class="max-w-xs border rounded border-gray-400" type="text" name="other-model" id="other-model" hidden disabled><br>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <label class="uppercase tracking-widest font-semibold text-xs text-gray-700" for="serial-number">*Serial number</label>
+                    <input class="max-w-xs border rounded border-gray-400" type="text" name="serial-number" id="serial-number" required><br>
+                    
                 </div>
             </div>
             <div class="px-16 py-8 flex flex-col">
@@ -83,14 +82,14 @@
                 <option value="fender-precision">Precision Bass</option>
                 <option value="fender-jaguar">Jaguar Bass</option>
                 <option value="fender-mustang">Mustang Bass</option>
-                <option value="fender-others">Not listed here</option>
+                <option value="fender-other">Not listed here</option>
             </datalist>
             <datalist id="squier-model-list">
                 <option value="squier-jazz">Jazz Bass</option>
                 <option value="squier-precision">Precision Bass</option>
                 <option value="squier-jaquar">Jaguar Bass</option>
                 <option value="squier-mustang">Mustang Bass</option>
-                <option value="squier-others">Not listed here</option>
+                <option value="squier-other">Not listed here</option>
             </datalist>
             <datalist id="ibanez-model-list">
                 <option value="ibanez-sr">SR</option>
@@ -99,7 +98,7 @@
                 <option value="ibanez-rgb">RGB</option>
                 <option value="ibanez-talman">Talman Bass</option>
                 <option value="ibanez-mikro">miKro</option>
-                <option value="ibanez-others">Not listed here</option>
+                <option value="ibanez-other">Not listed here</option>
             </datalist>
             <datalist id="musicman-model-list">
                 <option value="musicman-stingray4">StingRay 4</option>
@@ -107,7 +106,7 @@
                 <option value="musicman-darkray">DarkRay</option>
                 <option value="musicman-joedart">Joe Dart Signature</option>
                 <option value="musicman-johnmyung">John Myung Signature</option>
-                <option value="musicman-others">Not listed here</option>
+                <option value="musicman-other">Not listed here</option>
             </datalist>
             <datalist id="sterling-model-list">
                 <option value="sterling-ray34">Ray34</option>
@@ -116,15 +115,16 @@
                 <option value="sterling-ray5">Ray5</option>
                 <option value="sterling-darkray">DarkRay</option>
                 <option value="sterling-petewentz">Pete Wentz Signature</option>
-                <option value="sterling-others">Not listed here</option>
+                <option value="sterling-other">Not listed here</option>
             </datalist>
             <datalist id="yamaha-model-list">
                 <option value="yamaha-bb">BB</option>
                 <option value="yamaha-trbx">TRBX</option>
                 <option value="yamaha-trb">TRB</option>
-                <option value="yamaha-others">Not listed here</option>
+                <option value="yamaha-other">Not listed here</option>
             </datalist>
         </form>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
