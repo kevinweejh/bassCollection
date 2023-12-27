@@ -1909,6 +1909,10 @@ video {
   background-image: url('img/pBass.jpg');
 }
 
+.bg-\[url\(\'\.\.\/img\/pBass\.jpg\'\)\] {
+  background-image: url('../img/pBass.jpg');
+}
+
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
